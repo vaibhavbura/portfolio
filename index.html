@@ -1,105 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vaibhav Bura</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="./js/slideshow.js"></script>
+    <script src="./js/interactivity.js"></script>
+  </head>
+  <body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay">
+      <div class="terminal">
+        <div class="terminal-header">
+          <div class="terminal-buttons">
+            <span class="terminal-button close"></span>
+            <span class="terminal-button minimize"></span>
+            <span class="terminal-button maximize"></span>
+          </div>
+          <div class="terminal-title">portfolio@vaibhav:~</div>
+        </div>
+        <div class="terminal-content">
+          <div class="terminal-line">
+            <span class="prompt">$</span>
+            <span class="command">loading portfolio...</span>
+          </div>
+          <div class="loading-steps">
+            <div class="loading-step">
+              <div class="terminal-line">
+                <span class="prompt">$</span>
+                <span class="command">initializing system...</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="loading-step">
+              <div class="terminal-line">
+                <span class="prompt">$</span>
+                <span class="command">loading modules...</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="loading-step">
+              <div class="terminal-line">
+                <span class="prompt">$</span>
+                <span class="command">compiling assets...</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="loading-step">
+              <div class="terminal-line">
+                <span class="prompt">$</span>
+                <span class="command">starting server...</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="loading-step">
+              <div class="terminal-line">
+                <span class="prompt">$</span>
+                <span class="command">ready!</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</head>
-<body>
     <div id="particles-js"></div>
 
-
     <nav>
-        <div class="nav-container">
-            <div class="menu-container">
-                <img class="logo" src="./images/logo.png" alt="" srcset="">
-                <button class="hamburger">☰</button>
-                <h3>VAIBHAV BURA</h3>
-                <div class="nav-links">
-                    <a href="" class="nav-link">Work</a>
-                    <a href="./pages/about-me.html" class="nav-link">About</a>
-                    <a href="./pages/contact.html" class="nav-link">Contact</a>
-                </div>
-            </div>
-            <div class="tech-container"></div>
+      <div class="nav-container">
+        <div class="menu-container">
+          <img class="logo" src="./images/logo.png" alt="Logo" />
+          <h3>VAIBHAV BURA</h3>
+          <div class="nav-links">
+            <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+            <a href="#resume" class="nav-link"><i class="fas fa-file-alt"></i> Resume</a>
+            <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
+            <a href="pages/blog.html" class="nav-link"><i class="fas fa-blog"></i> Blog</a>
+          </div>
+          <button class="hamburger"><i class="fas fa-bars"></i></button>
         </div>
-        <div class="hamburger-list-container hidden">
-            <a href="" class="nav-link">Work</a>
-            <a href="./pages/about-me.html" class="nav-link">About</a>
-            <a href="./pages/contact.html" class="nav-link">Contact</a>
-        </div>
+      </div>
+      <div class="hamburger-list-container hidden">
+        <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+        <a href="#resume" class="nav-link"><i class="fas fa-file-alt"></i> Resume</a>
+        <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
+        <a href="pages/blog.html" class="nav-link"><i class="fas fa-blog"></i> Blog</a>
+      </div>
     </nav>
-    
+
     <div class="socials">
-        <a href="https://www.linkedin.com/in/vaibhavbura/"><img src="./images/linkdln.png" alt="" srcset=""></a>
-        <a href="https://github.com/vaibhavbura"><img src="./images/github.png" alt="" srcset=""></a>
-</div>
+      <a href="https://www.linkedin.com/in/vaibhavbura/"
+        ><img src="./images/linkdln.png" alt="" srcset=""
+      /></a>
+      <a href="https://github.com/vaibhavbura"
+        ><img src="./images/github.png" alt="" srcset=""
+      /></a>
+    </div>
 
     <section class="main-section">
-        <img  class="headshot" src="./images/mine.jpeg" alt="" srcset="">
-        <div class="introduction">
-            <h1>Hi! I'am Vaibhav</h1>
-            <p>A web developer based in India.</p>
-            <div class="bounce"><i class="arrow"></i></div>
-        </div>
+      <img class="headshot" src="./images/mine.jpeg" alt="" srcset="" />
+      <div class="introduction">
+        <h1>Hi! I'm Vaibhav</h1>
+        <p>A Data Scientist passionate about turning data into insights.</p>
+        <div class="bounce"><i class="arrow"></i></div>
+      </div>
     </section>
 
-    <section class="tech">
-        <h2>Tech Stack</h2><br>
-        <p>These are the tools and technologies I already have experience working upon.</p><br>
-        <div class="skill_set">
-                
-            
-            
-            
-            
-            <div class="skill"><a href="https://www.w3schools.com/html/" target="_blank" rel="noreferrer"><img src="./images/HTML.b48c583effc1157adcdd4865caf2f4fb.svg" alt="HTML"></a></div>
-            <div class="skill"><a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"><img src="./images/CSS.b54e240f4e1d677bc169891768ec8927.svg" alt="CSS"></a></div>
-            
-            <div class="skill"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="./images/Javascript.4c71d054542176f106ba4efde549f494.svg" alt="Javascript"></a></div>
-            <div class="skill">
-                <a href="https://www.java.com/" target="_blank" rel="noreferrer">
-                  <img src="./images/java.png" alt="Java">
-                </a>
-              </div><br>
-              
-              <div class="skill">
-                <a href="https://www.python.org/" target="_blank" rel="noreferrer">
-                  <img src="./images/python.png" alt="Python">
-                </a>
-              </div>
-              <div class="skill"><a href="https://www.nodejs.org" target="_blank" rel="noreferrer"><img src="./images/NodeJS.5e0345a994e26822bd2245cc804e4328.svg" alt="NodeJS"></a></div>
-            
-            <div class="skill"><a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img src="./images/Bootstrap.1324e14f67290a51ed08cf5b7e15c037.svg" alt="Bootstrap"></a></div>
-            <div class="skill"><a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img src="./images/AWS.7f21cdb69a3a51ab569fadd8d2871436.svg" alt="Firebase"></a></div>
-            
-            
-           
-            
-            <div class="skill"><a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="./images/Git.b2c076ffe51b9ac3dc46c84b15674dfb.svg" alt="Git"></a></div>
-            <div class="skill"><a href="https://github.com/vaibhavbura" target="_blank" rel="noreferrer"><img src="./images/Github.3b43ac10b7df92fae8bde1ca4832c1a6.svg" alt="Github"></a></div>
-           
-            <div class="skill"><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img src="./images/VSCode.878f1577381c117820709612a1be9c1a.svg" alt="VSCode"></a></div>
-            <div class="skill"><a href="https://www.netlify.com/" target="_blank" rel="noreferrer"><img src="./images/Netlify.2e81854e2a809c6399434117648c5335.svg" alt="Netlify"></a></div>
-            <div class="skill"><a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"><img src="./images/C.4ce93ea040858d196da5c110348979ef.svg" alt="C"></a>
-            </div>
-        </div>
-
-        
-    </section>
-
-    <section></section>
-    <footer>
-        <p>Portfolio Under Construction. Stay tuned for updates!</p>
-        <p>Made with <span class="heart">&#x2661;</span> by Vaibhav Bura</p>
-
-      </footer>
-      
-    <script src="./js/particle.js"></script>
     
 
-</body>
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="intro-text">
+            I am a passionate Data Scientist with a strong foundation in machine
+            learning, statistical analysis, and data visualization. With
+            expertise in transforming complex data into actionable insights, I
+            help organizations make data-driven decisions.
+          </p>
+
+          <div class="expertise">
+            <h3>Areas of Expertise</h3>
+            <div class="expertise-grid">
+              <div class="expertise-item">
+                <i class="fas fa-brain"></i>
+                <h4>Machine Learning</h4>
+                <p>
+                  Developing and implementing predictive models using advanced
+                  algorithms
+                </p>
+              </div>
+              <div class="expertise-item">
+                <i class="fas fa-chart-bar"></i>
+                <h4>Data Analysis</h4>
+                <p>Extracting meaningful insights from complex datasets</p>
+              </div>
+              <div class="expertise-item">
+                <i class="fas fa-code"></i>
+                <h4>Programming</h4>
+                <p>Proficient in Python, R, SQL, and data science libraries</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills">
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <ul>
+                  <li>Python</li>
+                  <li>R</li>
+                  <li>SQL</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h4>Machine Learning</h4>
+                <ul>
+                  <li>Scikit-learn</li>
+                  <li>TensorFlow</li>
+                  <li>PyTorch</li>
+                  <li>XGBoost</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h4>Data Visualization</h4>
+                <ul>
+                  <li>Tableau</li>
+                  <li>Power BI</li>
+                  <li>Matplotlib</li>
+                  <li>Seaborn</li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=html,css,javascript,nodejs,react&perline=11" alt="" srcset="">
+                <img src="https://skillicons.dev/icons?i=tailwind,mysql,spring,py,java&perline=11" alt="" srcset="">
+                <img src="https://skillicons.dev/icons?i=c,django,fastapi,flask,docker&perline=11" alt="" srcset="">
+                <img src="https://skillicons.dev/icons?i=github,sklearn,tensorflow,ai,ubuntu&perline=11" alt="" srcset="">
+              </div>
+    </section>
+    <section id="resume" class="resume-section">
+      <h2>Resume</h2>
+      <div class="resume-content">
+        <div class="resume-info">
+          <div class="resume-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <h4>Education</h4>
+                <p>B.E-CSE(Artificial Intelligence & Machine Learning)</p>
+                <p>University of Mumbai</p>
+                <p>2022 - 2026</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <h4>Experience</h4>
+                <p>Software Developer</p>
+                <p>Tech Learniversity</p>
+                <p>Nov 2024 - Apr 2025</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-certificate"></i>
+              <div>
+                <h4>Certifications</h4>
+                <p>Google Data Analytics</p>
+                <p>AWS Machine Learning</p>
+                <p>Microsoft Data Science</p>
+              </div>
+            </div>
+          </div>
+          <a href="./VaibhavBura Updated.pdf" class="download-btn" download>
+            <i class="fas fa-download"></i> Download Full Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image-slideshow">
+            <div class="slideshow-container">
+              <div class="slide">
+                <img src="./images/bitcoin1.png" alt="Bitcoin Prediction 1" />
+              </div>
+              <div class="slide">
+                <img src="./images/bitcoin2.png" alt="Bitcoin Prediction 2" />
+              </div>
+              <div class="slide">
+                <img src="./images/bitcoin3.png" alt="Bitcoin Prediction 3" />
+              </div>
+            </div>
+            <div class="slideshow-controls">
+              <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+              <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Bitcoin Price Prediction</h3>
+            <p>Developed and compared RNN, GRU, and LSTM models for Bitcoin price
+              prediction. LSTM achieved the lowest RMSE (1907 vs. 2580+). Built
+              an Streamlit interface to showcase LSTM predictions.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>Time Series</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-slideshow">
+            <div class="slideshow-container">
+              <div class="slide">
+                <img src="./images/sentiment1.png" alt="Sentiment Analysis 1" />
+              </div>
+              <div class="slide">
+                <img src="./images/sentiment2.png" alt="Sentiment Analysis 2" />
+              </div>
+              <div class="slide">
+                <img src="./images/sentiment3.png" alt="Sentiment Analysis 3" />
+              </div>
+            </div>
+            <div class="slideshow-controls">
+              <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+              <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Sentiment Analysis System</h3>
+            <p>
+              Built a BERT-based sentiment analysis model for customer reviews,
+              achieving 92% accuracy in sentiment classification.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>TensorFlow</span>
+              <span>NLP</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-slideshow">
+            <div class="slideshow-container">
+              <div class="slide">
+                <img src="./images/dashboard1.png" alt="Dashboard 1" />
+              </div>
+              <div class="slide">
+                <img src="./images/dashboard2.png" alt="Dashboard 2" />
+              </div>
+              <div class="slide">
+                <img src="./images/dashboard3.png" alt="Dashboard 3" />
+              </div>
+            </div>
+            <div class="slideshow-controls">
+              <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+              <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Business Analytics Dashboard</h3>
+            <p>
+              Created an interactive dashboard for business metrics using
+              Tableau, enabling data-driven decision making.
+            </p>
+            <div class="project-tags">
+              <span>Tableau</span>
+              <span>SQL</span>
+              <span>Data Visualization</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2024 Vaibhav Bura. All rights reserved.</p>
+        <p>Made with <span class="heart">&#x2661;</span> by Vaibhav Bura</p>
+      </div>
+    </footer>
+
+    <script src="./js/particle.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
